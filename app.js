@@ -43,3 +43,27 @@ function fibGen() {
         console.log(`Series: ${series}`);
     }
 }
+
+// random name
+function randomName() {
+    var namesArray = Array(prompt("Please enter an array of names"));
+
+}
+
+// function jsonParse() {
+
+// }
+
+function objectStringify() {
+objectString = "'{";
+var givenObject = {"hi": "there", "hello": "mate", "'sup": "yo"};
+for(var i = 0; i < Object.keys(givenObject).length; i++) {
+    objectString += '"' + Object.keys(givenObject)[i] + '"' + ": " + '"' + givenObject[Object.keys(givenObject)[i]] + '"';
+    if (i != Object.keys(givenObject).length-1) {
+        objectString += ', ';
+    }
+}
+objectString += "}'";
+console.log(objectString);
+}
+objectStringify();
