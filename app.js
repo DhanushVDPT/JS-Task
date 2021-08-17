@@ -50,20 +50,25 @@ function randomName() {
 
 }
 
-// function jsonParse() {
-
-// }
+function jsonParse() {
+    var jsonObject = {};
+    var givenString = `'{"hi": "there", "hello": "mate", "'sup": "yo"}'`;
+    var useful = givenString.slice(2, givenString.length-1)
+    jsonObject = Object(useful);
+    console.log(jsonObject);
+}
+jsonParse();
 
 function objectStringify() {
-objectString = "'{";
-var givenObject = {"hi": "there", "hello": "mate", "'sup": "yo"};
-for(var i = 0; i < Object.keys(givenObject).length; i++) {
-    objectString += '"' + Object.keys(givenObject)[i] + '"' + ": " + '"' + givenObject[Object.keys(givenObject)[i]] + '"';
-    if (i != Object.keys(givenObject).length-1) {
-        objectString += ', ';
+    objectString = "'{";
+    var givenObject = {"hi": "there", "hello": "mate", "'sup": "yo"};
+    for(var i = 0; i < Object.keys(givenObject).length; i++) {
+        objectString += '"' + Object.keys(givenObject)[i] + '"' + ": " + '"' +  givenObject[Object.keys(givenObject)[i]] + '"';
+        if (i != Object.keys(givenObject).length-1) {
+            objectString += ', ';
+        }
     }
-}
-objectString += "}'";
-console.log(objectString);
+    objectString += "}'";
+    console.log(objectString);
 }
 objectStringify();
