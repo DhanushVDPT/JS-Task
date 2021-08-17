@@ -1,1 +1,37 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+:root {
+  --body-bg: #DC2F02;
+  --btn-clr: #03071E;
+  --btn-txt: #FFBA08;
+  --h1-clr: #FFFFFF;
+  --txt-clr: #D4D700;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--txt-clr);
+  font-family: 'Georama', sans-serif;
+}
+
+body h1 {
+  font-size: 3.5em;
+  margin-bottom: 1em;
+  color: var(--h1-clr);
+}
+
+body .score {
+  font-size: 4em;
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--btn-clr);
+  color: var(--btn-txt);
+  font-size: 2em;
+  padding: 0.4em 2em;
+  border-radius: 1.5em;
+}
+
+.btn:hover {
+  background-color: var(--btn-txt);
+}
+/*# sourceMappingURL=main.css.map */
