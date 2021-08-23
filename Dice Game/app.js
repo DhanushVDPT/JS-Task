@@ -5,13 +5,13 @@ function roll() {
 		var rollp2 = Math.floor(Math.random() * 6) + 1;
 
 		if (rollp1 === rollp2) {
-			document.querySelector("#winner").innerHTML = "Draw!";
+			document.querySelector("#winner").innerHTML = "DRAW!";
 		}
-		else if (rollp1 < rollp2) {
-			document.querySelector("#winner").innerHTML = "Player 2 WINS!";
+		else if (rollp1 > rollp2) {
+			document.querySelector("#winner").innerHTML = "PLAYER 1 WINS!";
 		}
 		else {
-			document.querySelector("#winner").innerHTML = "Player 1 WINS!";
+			document.querySelector("#winner").innerHTML = "PLAYER 2 WINS!";
 		}
         document.querySelector("#p1score").innerHTML = rollp1;
         document.querySelector("#p2score").innerHTML = rollp2;
