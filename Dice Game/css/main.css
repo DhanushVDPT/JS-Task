@@ -23,6 +23,12 @@ body .score {
   text-align: center;
 }
 
+body #winner {
+  color: #011638;
+  text-align: center;
+  font-size: 3em;
+}
+
 .btn {
   background-color: var(--btn-clr);
   color: var(--btn-txt);
