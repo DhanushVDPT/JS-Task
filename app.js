@@ -46,8 +46,10 @@ function fibGen() {
 
 // random name
 function randomName() {
-    var namesArray = Array(prompt("Please enter an array of names"));
-
+    var names = prompt("Please enter names separated by commas");
+    var namesArray = names.split(",");
+    var randomName = namesArray[Math.floor(Math.random()*namesArray.length)];
+    console.log(randomName);
 }
 
 function jsonParse() {
