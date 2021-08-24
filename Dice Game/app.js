@@ -28,3 +28,5 @@ function roll() {
         document.querySelector("#p2score").innerHTML = rollp2;
 	}, 1000);
 }
+
+roll();

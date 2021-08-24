@@ -18,13 +18,13 @@
     <p id="winner" class="mt-3">Click on "roll" to roll the dice</p>
     <div class="container ms-auto me-auto game-grid">
         <!-- this is where game should be -->
-        <div class="row mt-5">
+        <div class="row">
             <!-- center the content in columns -->
             <div class="col-6 d-flex justify-content-center">
-                <div class="player-one player">
+                <div class="player-one player d-flex justify-content-center flex-column">
                     <!-- player one's div -->
                     <h1>Player 1</h1>
-                    <p class="score mt-5" id="p1score">
+                    <p class="score" id="p1score">
                         <!-- display player one's score here -->
                     </p>
                     <!-- dice -->
@@ -32,10 +32,10 @@
                 </div>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <div class="player-two player">
+                <div class="player-two player d-flex justify-content-center flex-column">
                     <h1>Player 2</h1>
                     <!-- player two's div -->
-                    <p class="score mt-5" id="p2score">
+                    <p class="score" id="p2score">
                         <!-- display player two's score here -->
                     </p>
                     <!-- dice -->
@@ -44,8 +44,8 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-3">
+    <div class="row justify-content-center mt-4">
+        <div class="col-3 ps-0 pe-0 d-flex justify-content-center">
             <button id="roll-btn" class="btn" onclick="roll()">Roll</button>
         </div>
     </div>

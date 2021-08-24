@@ -6,10 +6,19 @@
   --txt-clr: #D4D700;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
+  overflow-x: hidden;
   background-color: var(--body-bg);
   color: var(--txt-clr);
   font-family: 'Georama', sans-serif;
+  font-size: 0.4em;
 }
 
 body h1 {
@@ -48,31 +57,58 @@ body #winner {
 
 @-webkit-keyframes shake {
   0% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   50% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   100% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
 @keyframes shake {
   0% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   50% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   100% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 0.5em;
+  }
+  body h1 {
+    margin-bottom: 0.5em;
+  }
+  body .score {
+    margin-top: 0.8em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 0.4em;
+  }
+  body .score {
+    margin-bottom: 1em !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 0.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
