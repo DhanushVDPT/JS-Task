@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 4</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container mt-3">
     <!-- Leap Year -->
-    <p>Click the button to check leap year.</p>
-    <button onclick="leapYear()">Check Leap Year</button>
+    <p class="fs-4">Click the button to check leap year.</p>
+    <button class="btn btn-primary" onclick="leapYear()">Check Leap Year</button>
     <p id="result"></p>
 
     <!-- Fibonacci -->
-    <p>Click the button to generate a Fibonacci sequence.</p>
-    <button onclick="fibGen()">Generate Fibanocci Series</button>
+    <p class="fs-4">Click the button to generate a Fibonacci sequence.</p>
+    <button class="btn btn-primary" onclick="fibGen()">Generate Fibanocci Series</button>
     <p id="series"></p>
 
     <!-- Array -->
-    <p>Click the button to select a random name.</p>
-    <button onclick="randomName()">Array</button>
+    <p class="fs-4">Click the button to select a random name.</p>
+    <button class="btn btn-primary" onclick="randomName()">Array</button>
     <p id="name"></p>
 
     <!-- dice game -->
-    <p>Click the button to play a dice game</p>
-    <a href="./Dice Game/index.html" target="_blank">Dice Game</a>
+    <p class="fs-4">Click the button to play a dice game</p>
+    <a href="./Dice Game/index.html" target="_blank" class="btn btn-primary">Dice Game</a>
+    </div>
 
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 </html>

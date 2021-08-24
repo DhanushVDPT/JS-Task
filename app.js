@@ -52,6 +52,7 @@ function randomName() {
     console.log(randomName);
 }
 
+//json Parse
 function jsonParse() {
     var jsonObject = {};
     var givenString = `'{"hi": "there", "hello": "mate", "'sup": "yo"}'`;
@@ -61,6 +62,8 @@ function jsonParse() {
 }
 jsonParse();
 
+
+//json Stringify
 function objectStringify() {
     objectString = "'{";
     var givenObject = {"hi": "there", "hello": "mate", "'sup": "yo"};
