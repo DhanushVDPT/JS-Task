@@ -46,10 +46,11 @@ function fibGen() {
 
 // random name
 function randomName() {
-    var names = prompt("Please enter names separated by commas");
+    var names = prompt("Please enter names separated by commas", "Steve Rogers,Tony Stark,Natasha Romanoff,Thor Odinson,Clint Barton,Bruce Banner");
     var namesArray = names.split(",");
     var randomName = namesArray[Math.floor(Math.random()*namesArray.length)];
     console.log(randomName);
+    document.getElementById("name").innerHTML = "Check Console"
 }
 
 //json Parse

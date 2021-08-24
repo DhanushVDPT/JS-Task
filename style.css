@@ -1,0 +1,12 @@
+:root{
+    --output-clr: #FE5D26;
+    --bg: #C0FDFF;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.output{
+    color: var(--output-clr);
+}
