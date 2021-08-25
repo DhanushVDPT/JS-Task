@@ -55,10 +55,10 @@ function randomName() {
 
 //json Parse
 function jsonParse() {
-    var jsonObject = {};
     var givenString = `'{"hi": "there", "hello": "mate", "'sup": "yo"}'`;
-    var useful = givenString.slice(2, givenString.length-1)
-    jsonObject = Object(useful);
+    var useful = givenString.slice(2, givenString.length-2)
+    var jsonObject = eval('({' + useful + '})');
+    console.log("Json Parse:")
     console.log(jsonObject);
 }
 jsonParse();
@@ -75,6 +75,7 @@ function objectStringify() {
         }
     }
     objectString += "}'";
+    console.log("Json Stringify:")
     console.log(objectString);
 }
 objectStringify();
